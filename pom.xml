@@ -25,7 +25,7 @@
         <start-class>example.Application</start-class>
 
         <!-- AZURE FUNCTION CONFIG -->
-        <azure.functions.maven.plugin.version>1.22.0</azure.functions.maven.plugin.version>
+        <azure.functions.maven.plugin.version>1.26.0</azure.functions.maven.plugin.version>
         <functionAppName>exist-handson-0726</functionAppName>
         <functionAppRegion>southeastasia</functionAppRegion>
         <functionResourceGroup>handson</functionResourceGroup>
