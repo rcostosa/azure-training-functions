@@ -74,6 +74,7 @@
                     <region>${functionAppRegion}</region>
                     <appServicePlanName>${functionAppServicePlanName}</appServicePlanName>
                     <pricingTier>${functionPricingTier}</pricingTier>
+                    <disableAppInsights>true</disableAppInsights>
 
                     <hostJson>${project.basedir}/src/main/resources/host.json</hostJson>
                     <localSettingsJson>${project.basedir}/src/main/resources/local.settings.json</localSettingsJson>
