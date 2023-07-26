@@ -73,7 +73,6 @@
                     <resourceGroup>${functionResourceGroup}</resourceGroup>
                     <region>${functionAppRegion}</region>
                     <appServicePlanName>${functionAppServicePlanName}</appServicePlanName>
-                    <pricingTier>${functionPricingTier}</pricingTier>
                     <disableAppInsights>true</disableAppInsights>
 
                     <hostJson>${project.basedir}/src/main/resources/host.json</hostJson>
