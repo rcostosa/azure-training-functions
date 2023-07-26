@@ -73,7 +73,6 @@
                     <resourceGroup>${functionResourceGroup}</resourceGroup>
                     <region>${functionAppRegion}</region>
                     <appServicePlanName>${functionAppServicePlanName}</appServicePlanName>
-                    <disableAppInsights>true</disableAppInsights>
 
                     <hostJson>${project.basedir}/src/main/resources/host.json</hostJson>
                     <localSettingsJson>${project.basedir}/src/main/resources/local.settings.json</localSettingsJson>
