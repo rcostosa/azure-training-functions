@@ -6,18 +6,19 @@ import com.microsoft.azure.functions.HttpRequestMessage;
 import com.microsoft.azure.functions.annotation.AuthorizationLevel;
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.HttpTrigger;
-import java.util.Optional;
-import java.util.function.Function;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+import java.util.function.Function;
+
 @Component
-public class UppercaseHandler {
+public class LowercaseHandler {
 
 	@Autowired
-	private Function<String, String> uppercase;
+	private Function<String, String> lowercase;
 
-	@FunctionName("uppercase")
+	@FunctionName("lowercase")
 	public String execute(
 		@HttpTrigger(
 			name = "req",
@@ -26,6 +27,6 @@ public class UppercaseHandler {
 		ExecutionContext context
 	) {
 		context.getLogger().warning("Using Java (" + System.getProperty("java.version") + ")");
-		return uppercase.apply(request.getBody().get());
+		return lowercase.apply(request.getBody().get());
 	}
 }
